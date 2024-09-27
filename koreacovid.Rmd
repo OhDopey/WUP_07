@@ -51,6 +51,13 @@ The majority of people who where alive were female, at anout 55% while the rest 
   
 ## Numerical results
 
+```{r}
+table1 <- xtabs(~result + Sex, data=kRdata)
+rowPerc(table1)
+colPerc(table1)
+```
+
+From the data we can see that the majority of the alive population were females, with a ratio of 56:44. However, of the dead population, the majority were males, with a ratio of 36:64. 3% of the male population were dead showing that the male population doubles than the females.
 
 ## Inferential results 
 
